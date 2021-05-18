@@ -104,3 +104,15 @@ https://stackoverflow.com/questions/4515580/how-do-i-remove-the-old-history-from
 
 Use `git fetch && git rebase`
 
+## Code stats 
+
+Lines added/removed/changed (read [more](https://gist.github.com/Xeoncross/4020489))
+
+    git log --shortstat --since "1 year ago" --until "1 week ago" | grep "files changed" | awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed", files, "lines inserted:", inserted, "lines deleted:", deleted}'
+    
+Commits in a period 
+
+    git rev-list --count HEAD --since=“May 18 2020” --before=“May 18 2021" --all
+
+    
+
