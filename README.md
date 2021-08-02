@@ -114,5 +114,12 @@ Commits in a period
 
     git rev-list --count HEAD --since=“May 18 2020” --before=“May 18 2021" --all
 
-    
+## Diff all files matching a glob pattern 
+
+    git diff <tag1> <tag2> -- '<some glob>'
+
+For example:
+
+    git difftool v21.01.0-edge v21.02.0-edge -- '**/MANIFEST.MF'
+
 
