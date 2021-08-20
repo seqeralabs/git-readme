@@ -122,4 +122,9 @@ For example:
 
     git difftool v21.01.0-edge v21.02.0-edge -- '**/MANIFEST.MF'
 
+## Find text across any branch 
+
+    git grep "string/regexp" $(git rev-list --all)
+
+https://stackoverflow.com/a/7151411/395921
 
