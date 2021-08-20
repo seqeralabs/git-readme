@@ -1,4 +1,4 @@
-git push -u origin master# GIT README 
+# GIT README 
 
 Shortcuts to recurrent Git commands 
 
