@@ -128,3 +128,7 @@ For example:
 
 https://stackoverflow.com/a/7151411/395921
 
+## Find all tags containing a commit 
+
+    git tag --contains <commit id>
+
