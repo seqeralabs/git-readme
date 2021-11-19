@@ -131,4 +131,9 @@ https://stackoverflow.com/a/7151411/395921
 ## Find all tags containing a commit 
 
     git tag --contains <commit id>
+    
+    
+## Find last 6 months committers 
+
+    git ll --since="last 6 month" | sed 's/.*<\(.*\)>/\1/g' | sort | uniq
 
