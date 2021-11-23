@@ -137,6 +137,6 @@ https://stackoverflow.com/a/7151411/395921
 
     git ll --since="last 6 month" | sed 's/.*<\(.*\)>/\1/g' | sort | uniq
 
-## Find when a tag has been created 
+## Find when a tag was created 
 
     git for-each-ref --format="%(refname:short) | %(creatordate)" "refs/tags/*"
