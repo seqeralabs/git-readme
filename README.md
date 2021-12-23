@@ -140,3 +140,7 @@ https://stackoverflow.com/a/7151411/395921
 ## Find when a tag was created 
 
     git for-each-ref --format="%(refname:short) | %(creatordate)" "refs/tags/*"
+    
+## Count lines of code in a period 
+
+    git log --shortstat --author "pditommaso" --since "1 years ago"  | grep "files changed" | awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed", files, "lines inserted:", inserted, "lines deleted:", deleted}'
