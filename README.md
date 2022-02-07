@@ -67,13 +67,11 @@ Read more [here](https://andrey.nering.com.br/2016/git-submodules-vs-subtrees/).
     git diff stash
     git diff stash@{1} [other]
 
-## Misc 
-
-Find a commit in any branch introducing a change
+## Find a commit in any branch introducing a change
 
     git log -S <whatever> --source --all
 
-Reset last merge pushed 
+### Reset last merge pushed 
 
     git reset --hard HEAD@{1}
 
