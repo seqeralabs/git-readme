@@ -69,7 +69,7 @@ Read more [here](https://andrey.nering.com.br/2016/git-submodules-vs-subtrees/).
 
 ## Find a commit in any branch introducing a change
 
-    git log -S <whatever> --source --all
+    git log --source --all -S <whatever> 
 
 ### Reset last merge pushed 
 
